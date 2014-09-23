@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <head>
+	<head>
+		<title></title>
+    </head>
     
-  </head>
-  
-  <body>
-    
-  </body>
+    <body>
+		<?php
+		
+		?>  
+    </body>
 </html>
