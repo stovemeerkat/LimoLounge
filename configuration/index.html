@@ -3,23 +3,32 @@
 <head>
 	<title>Konfiguration</title>
 	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
-	<form>
-		<div id="flavors">
-			
+	<form action=/*Page that should be opened after this one*/"" method="post">
+		<div class="config-step" id="flavors">
+			<p>Aromen:</p>
+			<input type="checkbox" name="Zitrone">Zitrone <br>
+			<input type="checkbox" name="Orange">Orange
 		</div>
-		<div id="colors">
-			
+		<div class="config-step" id="colors">
+			<p>Farbstoffe:</p>
+			<input type="checkbox" name="Gelb">Gelb <br>
+			<input type="checkbox" name="Rot">Rot
 		</div>
-		<div id="specials"></div>
+		<div class="config-step" id="specials">
+			<p>Spezielle Zutaten:</p>
+			<input type="checkbox" name="Kohlensäure">Kohlensäure <br>
+			<input type="checkbox" name="Koffein">Koffein
+		</div>
 	</form>
-	<div id="selector-wrapper">
-		<div class="selector" id="flavors-sel"></div>
-		<div class="selector" id="colors-sel"></div>
-		<div class="selector" id="specials-sel"></div>
+	<div id="points-wrapper">
+		<div class="point" id="flavors-point"></div>
+		<div class="point" id="colors-point"></div>
+		<div class="point" id="specials-point"></div>
 	</div>
 </body>
 
