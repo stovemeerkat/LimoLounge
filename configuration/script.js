@@ -14,6 +14,6 @@ var changeToStep = function(selector){
 	var selectedPoint = selector + '-point'
 	$('.config-step').fadeOut('slow');
 	$(selector).fadeIn('slow');
-	$('.point').css('background-color', '#FFFFFF');
+	$('.point').css('background-color', 'rgba(255, 255, 255, 0)');
 	$(selectedPoint).css('background-color', '#000000');
 };
