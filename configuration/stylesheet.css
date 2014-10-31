@@ -79,12 +79,12 @@ html{
 
 .config-step{
 	display: block;
-	position: relative;
-	top: 5em;
-	height: auto;
+	position: absolute;
+	top: 12.5%;
+	height: 75%;
 	width: 90%;
+	left: 5%;
 	margin: auto;
-	padding-bottom: 2em;
 	background-color: rgba(0, 0, 0, 0.5);
 	color: #FFFFFF;
 	z-index: 2;
@@ -107,6 +107,16 @@ html{
 	font-size: 2em;
 }
 
+.option-wrapper{
+	margin-bottom: 5.5em;
+	display: inline-block;
+}
+
+.option-checkbox{
+	display: inline-block;
+	top: 50%;
+	transform: translate(0, 30%);
+}
 .config-option{
 	cursor: pointer;
 }
@@ -128,8 +138,10 @@ img{
 
 #points-wrapper{
 	display: block;
-	position: relative;
-	top: 7em;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, 0);
 	height:0.7em;
 	text-align: center;
 	z-index: 2;
