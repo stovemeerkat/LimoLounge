@@ -1,3 +1,95 @@
 *{
 	font-family: Arial, sans-serif;
 }
+
+html{
+	background: url('https://scontent-a-vie.xx.fbcdn.net/hphotos-xpa1/t31.0-8/10631201_828426333841759_7997915809994208160_o.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+
+#shade{
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 1;
+}
+
+#directory{
+	display: block;
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 4em;
+	position: fixed;
+	top: 0;
+	left: 0;
+	text-align: center;
+	z-index: 3;
+}
+
+#logo{
+	display: inline-block;
+	position: absolute;
+	height: 6em;
+	width: 6em;
+	border-radius: 30em;
+	top: -1em;
+	left: 0.5em;
+	z-index: 3;
+}
+ 
+#logo-img{
+	height: 6em;
+	width: 6em;
+	border-radius: 30em;
+}
+
+.dir-item{
+	display: inline-block;
+	position: relative;
+	margin: auto;
+	height: 2em;
+	width: 5em;
+	top: 1em;
+	color: rgba(255, 255, 255, 0.9);
+	border-radius: 15px;
+	z-index: 3;
+}
+ 
+.dir-item:hover{
+	background-color: rgba(255, 255, 255, 0.2);
+	z-index: 3;
+}
+ 
+.dir-link{
+	display: block;
+	position: relative;
+	margin: auto;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.9);
+	text-decoration: none;
+	font-size: 1.5em;
+	font-family: Calibri, sans-serif;
+	z-index: 3;
+}
+
+.config-step{
+	position: absolute;
+	width: 90%;
+	left: 5%;
+	top: 8em;
+	padding: 5em 0em 5em 0em;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 2;
+}
+
+#colors{
+	display: none;
+}
+
+#specials{
+	display: none;
+}
