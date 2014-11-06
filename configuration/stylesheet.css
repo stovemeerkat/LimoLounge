@@ -112,15 +112,6 @@ html{
 	display: inline-block;
 }
 
-.option-checkbox{
-	display: inline-block;
-	top: 50%;
-	transform: translate(0, 30%);
-}
-.config-option{
-	cursor: pointer;
-}
-
 img{
 	display: block;
 	position: relative;
