@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 
+<?php
+	$servername = '';
+	$username = '';
+	$password = '';
+	
+	$conn = new mysqli($servername, $username, $password);
+	
+	if($conn->connect_error){
+		die('Connection failed:\n' . $conn->connect_error);
+	}
+?>
 <html>
 	<head>
 		<title>Bestellbestätigung</title>
