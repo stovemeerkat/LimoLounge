@@ -127,13 +127,54 @@ img{
 	display: none;
 }
 
+.button{
+	display: block;
+	position: absolute;
+	height: 1em;
+	width: 3em;
+	line-height: 1em;
+	padding: 0.2em;
+	background-color: #ff8c00;
+	text-align: center;
+	font-size: 1.5em;
+	z-index: 2;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#flavors-nextBtn{
+	right: 42.5%;
+	bottom: -2.2em;
+}
+
+#colors-nextBtn{
+	right: 42.5%;
+	bottom: -2.2em;
+}
+
+#colors-backBtn{
+	left: 42.5%;
+	bottom: -2.2em;
+}
+
+#specials-backBtn{
+	left: 42.5%;
+	bottom: -2.2em;
+}
+
+#btn-Finished{
+	right: 42.5%;
+	bottom: -2.2em;
+}
+
 #points-wrapper{
 	display: block;
 	position: absolute;
-	top: 90%;
+	top: 87.5%;
 	left: 50%;
 	transform: translate(-50%, 0);
-	height:0.7em;
+	height:4.5em;
+	line-height: 4.5em;
 	text-align: center;
 	z-index: 2;
 }

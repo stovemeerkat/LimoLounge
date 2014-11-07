@@ -8,6 +8,18 @@ $(document).ready(function(){
 	$('#specials-point').click(function(){
 		changeToStep('#specials');
 	});
+	$('#flavors-nextBtn').click(function(){
+		changeToStep('#colors');
+	});
+	$('#colors-nextBtn').click(function(){
+		changeToStep('#specials');
+	});
+	$('#colors-backBtn').click(function(){
+		changeToStep('#flavors');
+	});
+	$('#specials-backBtn').click(function(){
+		changeToStep('#colors');
+	});
 });
 
 var changeToStep = function(selector){
