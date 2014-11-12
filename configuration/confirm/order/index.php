@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <?php
 	$servername = '';
 	$username = '';
@@ -6,7 +8,7 @@
   
 	session_start();
 	
-		$conn = new mysqli($servername, $username, $password, $dbname);
+	$conn = new mysqli($servername, $username, $password, $dbname);
 	
 	if($conn->connect_error){
 		die('Connection failed:\n' . $conn->connect_error);
@@ -20,6 +22,29 @@
 		echo 'nein <br>';
 		}
 	}
-  
-	checkOption('Zitrone');
-?>
+ ?>
+ 
+ <html>
+	<head>
+		<title>Vielen Dank!</title>
+	</head>
+	
+	<body>
+		<h2>Aromen</h2>
+		<?php
+			checkOption('Zitrone');
+			checkOption('Orange');
+			checkOption('Passionsfrucht');
+		?>
+		<h2>Farbstoffe</h2>
+		<?php
+			checkOption('Gelb');
+			checkOption('Rot');
+		?>
+		<h2>Spezielle Zutaten</h2>
+		<?php
+			checkOption('Kohlensäure');
+			checkOption('Koffein');
+		?>
+	</body>
+</html>

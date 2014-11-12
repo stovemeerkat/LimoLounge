@@ -16,11 +16,11 @@
 ?>
 <html>
 	<head>
-		<title>BestellbestÃ¤tigung</title>
+		<title>Bestellbestätigung</title>
 	</head>
 	
 	<body>
-		<h1>Bestellung Ã¼beprÃ¼fen:</h1>
+		<h1>Bestellung übeprüfen:</h1>
 		<h2>Aromen</h2>
 		<?php
 			checkOption('Zitrone');
@@ -34,7 +34,7 @@
 		?>
 		<h2>Spezielle Zutaten</h2>
 		<?php
-			checkOption('KohlensÃ¤ure');
+			checkOption('Kohlensäure');
 			checkOption('Koffein');
 		?>
 		<a href="order/index.php?<?php echo htmlspecialchars(SID); ?>">Bestellen</a>
