@@ -47,5 +47,6 @@
 			checkOption('Kohlensäure');
 			checkOption('Koffein');
 		?>
+		<a href="order/index.php?<?php echo htmlspecialchars(SID); ?>">Bestellen</a>
 	</body>
 </html>
