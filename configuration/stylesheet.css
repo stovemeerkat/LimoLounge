@@ -130,9 +130,9 @@ img{
 .button{
 	display: block;
 	position: absolute;
-	height: 1em;
-	width: 3em;
-	line-height: 1em;
+	height: 2.5em;
+	width: 7.5em;
+	line-height:2.5em;
 	padding: 0.2em;
 	background-color: #ff8c00;
 	text-align: center;
@@ -141,30 +141,30 @@ img{
 	cursor: pointer;
 	border-radius: 5px;
 }
-
+ 
 #flavors-nextBtn{
-	right: 42.5%;
-	bottom: -2.2em;
+	right: 3em;
+	bottom: 2em;
 }
-
+ 
 #colors-nextBtn{
-	right: 42.5%;
-	bottom: -2.2em;
+	right: 3em;
+	bottom: 2em;
 }
-
+ 
 #colors-backBtn{
-	left: 42.5%;
-	bottom: -2.2em;
+	left: 3em;
+	bottom: 2em;
 }
-
+ 
 #specials-backBtn{
-	left: 42.5%;
-	bottom: -2.2em;
+	left: 3em;
+	bottom: 2em;
 }
-
+ 
 #btn-Finished{
-	right: 42.5%;
-	bottom: -2.2em;
+	right: 3em;
+	bottom: 2em;
 }
 
 #points-wrapper{
