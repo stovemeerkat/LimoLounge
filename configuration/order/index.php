@@ -24,11 +24,11 @@
 ?>
 <html>
 	<head>
-		<title>Bestellbestätigung</title>
+		<title>BestellbestÃ¤tigung</title>
 	</head>
 	
 	<body>
-		<h1>Vielen Dank für ihre Bestellung.</h1>
+		<h1>Bestellung Ã¼beprÃ¼fen:</h1>
 		<h2>Aromen</h2>
 		<?php
 			checkOption('Zitrone');
@@ -42,7 +42,7 @@
 		?>
 		<h2>Spezielle Zutaten</h2>
 		<?php
-			checkOption('Kohlensäure');
+			checkOption('KohlensÃ¤ure');
 			checkOption('Koffein');
 		?>
 	</body>
