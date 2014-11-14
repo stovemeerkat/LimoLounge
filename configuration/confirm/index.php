@@ -35,7 +35,7 @@
 		?>
 		<h2>Spezielle Zutaten</h2>
 		<?php
-			checkOption('Kohlensäure');
+			checkOption('Kohlensaeure');
 			checkOption('Koffein');
 		?>
 		<a href="order/index.php?<?php echo htmlspecialchars(SID); ?>">Bestellen</a>

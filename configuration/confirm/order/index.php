@@ -15,24 +15,30 @@
 	}
 	
 	$create = $conn->prepare('INSERT INTO Bestellungen () VALUES ();');
-	
 	$create->execute();
 	$ID = $conn->insert_id;
 	$create->close();
 	
-	$insert = $conn->prepare('INSERT INTO Aromen (ID, Zitrone, Orange) VALUES (?, ?, ?);
-		INSERT INTO Farbstoffe (ID, Gelb, Rot) VALUES (?, ?, ?);
-		INSERT INTO Specials (ID, Kohlensäure, Koffein) VALUES (?, ?, ?);');
-	$insert->bind_param('iiiiiiiii', $ID, $_SESSION['Zitrone'], $_SESSION['Orange'], $ID, $_SESSION['Gelb'], $_SESSION['Rot'], $ID, $_SESSION['Kohlensäure'], $_SESSION['Koffein']);
+	$flavours = $conn->prepare('INSERT INTO Aromen (ID, Zitrone, Orange) VALUES (?, ?, ?);');
+	$flavours->bind_param('iii', $ID, $_SESSION['Zitrone'], $_SESSION['Orange']);
+	$flavours->execute();
+	$flavours->close();
 	
-	$insert->execute();
-	$insert->close();
+	$colors = $conn->prepare('INSERT INTO Farbstoffe (ID, Gelb, Rot) VALUES (?, ?, ?);');
+	$colors->bind_param('iii', $ID, $_SESSION['Gelb'], $_SESSION['Rot']);
+	$colors->execute();
+	$colors->close();
+		
+	$specials = $conn->prepare('INSERT INTO Specials (ID, Kohlensaeure, Koffein) VALUES (?, ?, ?);');
+	$specials->bind_param('iii', $ID, $_SESSION['Kohlensaeure'], $_SESSION['Koffein']);	
+	$specials->execute();
+	$specials->close();
 	
 	$conn->close();
 	
 	function checkOption($optn){
 		echo $optn . ': ';
-		if(!empty($_SESSION[$optn])){
+		if($_SESSION[$optn]){
 		echo 'ja <br>';
 		} else {
 		echo 'nein <br>';
@@ -59,7 +65,7 @@
 		?>
 		<h2>Spezielle Zutaten</h2>
 		<?php
-			checkOption('Kohlensäure');
+			checkOption('Kohlensaeure');
 			checkOption('Koffein');
 		?>
 	</body>
