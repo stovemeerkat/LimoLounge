@@ -7,11 +7,12 @@
 		echo $optn . ': ';
 		
 		if(!empty($_POST[$optn])){
-			echo 'ja <br>';	
+			echo 'ja <br>';
+			$_SESSION[$optn] = true;
 		} else {
 			echo 'nein <br>';
+			$_SESSION[$optn] = false;
 		}
-	$_SESSION[$optn] = $_POST[$optn];
 	}
 ?>
 <html>
