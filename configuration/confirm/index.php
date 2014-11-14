@@ -22,16 +22,22 @@
 	
 	<body>
 		<h1>Bestellung übeprüfen:</h1>
-		<h2>Aromen</h2>
+		<h2>Geschmack</h2>
 		<?php
-			checkOption('Zitrone');
+			checkOption('Apfel');
+			checkOption('Himbeere');
+			checkOption('Mandarine');
+			checkOption('Mango');
 			checkOption('Orange');
-			checkOption('Passionsfrucht');
+			checkOption('Zitrone');
 		?>
-		<h2>Farbstoffe</h2>
+		<h2>Farbe</h2>
 		<?php
+			checkOption('Blau');
 			checkOption('Gelb');
+			checkOption('Gruen');
 			checkOption('Rot');
+			checkOption('Violett');
 		?>
 		<h2>Spezielle Zutaten</h2>
 		<?php

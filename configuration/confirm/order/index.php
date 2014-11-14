@@ -19,13 +19,13 @@
 	$ID = $conn->insert_id;
 	$create->close();
 	
-	$flavours = $conn->prepare('INSERT INTO Aromen (ID, Zitrone, Orange) VALUES (?, ?, ?);');
-	$flavours->bind_param('iii', $ID, $_SESSION['Zitrone'], $_SESSION['Orange']);
+	$flavours = $conn->prepare('INSERT INTO Aromen (ID, Apfel, Himbeere, Mandarine, Mango, Orange, Zitrone) VALUES (?, ?, ?, ?, ?, ?, ?);');
+	$flavours->bind_param('iiiiiii', $ID, $_SESSION['Apfel'], $_SESSION['Himbeere'], $_SESSION['Mandarine'], $_SESSION['Mango'], $_SESSION['Orange'], $_SESSION['Zitrone']);
 	$flavours->execute();
 	$flavours->close();
 	
-	$colors = $conn->prepare('INSERT INTO Farbstoffe (ID, Gelb, Rot) VALUES (?, ?, ?);');
-	$colors->bind_param('iii', $ID, $_SESSION['Gelb'], $_SESSION['Rot']);
+	$colors = $conn->prepare('INSERT INTO Farbstoffe (ID, Blau, Gelb, Gruen, Rot, Violett) VALUES (?, ?, ?, ?, ?, ?);');
+	$colors->bind_param('iiiiii', $ID, $_SESSION['Blau'], $_SESSION['Gelb'], $_SESSION['Gruen'], $_SESSION['Rot'], $_SESSION['Violett']);
 	$colors->execute();
 	$colors->close();
 		
@@ -52,16 +52,22 @@
 	</head>
 	
 	<body>
-		<h2>Aromen</h2>
+		<h2>Geschmack</h2>
 		<?php
-			checkOption('Zitrone');
+			checkOption('Apfel');
+			checkOption('Himbeere');
+			checkOption('Mandarine');
+			checkOption('Mango');
 			checkOption('Orange');
-			checkOption('Passionsfrucht');
+			checkOption('Zitrone');
 		?>
-		<h2>Farbstoffe</h2>
+		<h2>Farbe</h2>
 		<?php
+			checkOption('Blau');
 			checkOption('Gelb');
+			checkOption('Gruen');
 			checkOption('Rot');
+			checkOption('Violett');
 		?>
 		<h2>Spezielle Zutaten</h2>
 		<?php
