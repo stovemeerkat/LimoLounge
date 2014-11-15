@@ -58,7 +58,7 @@
 			<a href="http://limolounge.16mb.com/"><div id="logo"><img id="logo-img" src="Bilder/Logo.png"></div></a>
 			<div class="dir-item"><a href="http://limolounge.16mb.com/" class="dir-link">Start</a></div>
 			<div class="dir-item"><a href="http://limolounge.16mb.com/configuration/" class="dir-link">Configurate</a></div>
-			<div class="dir-item"><a href="http://limolounge.16mb.com/configuration/" class="dir-link">Staff</a></div>
+			<div class="dir-item"><a href="http://limolounge.16mb.com/configuration/staff/" class="dir-link">Staff</a></div>
 		</div>
 		<div class="config-step" style="z-index: 3">
 			<h2>Geschmack</h2>
