@@ -112,21 +112,6 @@ html{
 	display: inline-block;
 }
 
-img{
-	display: block;
-	position: relative;
-	top: -11em;
-	left: 50em;
-}
-
-#colors{
-	display: none;
-}
-
-#specials{
-	display: none;
-}
-
 .button{
 	display: block;
 	position: absolute;
@@ -141,57 +126,8 @@ img{
 	cursor: pointer;
 	border-radius: 5px;
 }
- 
-#flavors-nextBtn{
-	right: 3em;
-	bottom: 2em;
-}
- 
-#colors-nextBtn{
-	right: 3em;
-	bottom: 2em;
-}
- 
-#colors-backBtn{
-	left: 3em;
-	bottom: 2em;
-}
- 
-#specials-backBtn{
-	left: 3em;
-	bottom: 2em;
-}
- 
+
 #btn-Finished{
 	right: 3em;
 	bottom: 2em;
-}
-
-#points-wrapper{
-	display: block;
-	position: absolute;
-	top: 87.5%;
-	left: 50%;
-	transform: translate(-50%, 0);
-	height:4.5em;
-	line-height: 4.5em;
-	text-align: center;
-	z-index: 2;
-}
-
-.point{
-	display: inline-block;
-	height: 0.5em;
-	width: 0.5em;
-	border: 1px solid black;
-	border-radius: 30em;
-	cursor: pointer;
-}
-
-.point:hover{
-	background-color: #CCCCCC;
-}
-
-#flavors-point{
-	background-color: #000000;
 }
