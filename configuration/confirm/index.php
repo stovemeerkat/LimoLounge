@@ -14,6 +14,18 @@
 			$_SESSION[$optn] = false;
 		}
 	}
+	
+	function checkOptionText($optn){
+		echo $optn . ': ';
+		
+		if(!empty($_POST[$optn])){
+			echo $Vorname <br>;
+			$_SESSION['Vorname'] = $Vorname;
+		} else {
+			echo $Vorname '<br>';
+			$_SESSION['Vorname'] = 'Nicht Angegeben';
+		}
+	}
 ?>
 <html>
 	<head>
@@ -52,6 +64,15 @@
 			<?php
 				checkOption('Kohlensaeure');
 				checkOption('Koffein');
+			?>
+			<h2>Zahlungsdaten</h2>
+				<form action="confirm/index.php" method="post">
+					Vorname: <input type="text" name="Vorname"><br>
+					Lieferadresse: <input type="text" name="Lieferadresse">
+				</form>
+			<?php
+				checkOptionText('Vorname');
+				checkOptionText('Lieferadresse');
 			?>
 			<a href="order/index.php?<?php echo htmlspecialchars(SID); ?>"><div class="button" id="btn-Finished">Bestellen</div></a>
 		</div>
