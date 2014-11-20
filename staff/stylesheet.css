@@ -63,9 +63,10 @@ a{
 	display: inline-block;
 	position: relative;
 	margin: auto;
-	height: 2em;
-	width: 10em;
-	top: 1em;
+	height: 2.25em;
+	width: 7.5em;
+	top: 0.8125em;
+	line-height: 2.25em;
 	color: rgba(255, 255, 255, 0.9);
 	border-radius: 15px;
 	z-index: 3;
@@ -89,33 +90,42 @@ a{
 }
 
 #staff-container{
-	text-align: center;
+	display: block;
+	position: absolute;
+	top: 12.5%;
+	height: 75%;
+	width: 90%;
+	left: 5%;
+	margin: auto;
+	border: 2px solid black;
+	color: #FFFFFF;
 	z-index: 2;
 }
 
 .staff{
-	display: inline-block;
+	display: block;
 	position: relative;
-	margin-top: 8em;
-	height: 8em;
-	width: 8em;
-	border: 2px solid black;
-	border-radius: 30em;
+	height: 13em;
+	width: 100%;
 	z-index: 2;
-	}
-
-.staff-img{
-	height: 8em;
-	width: 8em;
-	border-radius: 30em;
-	}
-
-#staff-description-container{
-	height:3em;
-	text-align: center;
 }
 
-.staff-description{
+.staffIMGcont{
+	display: inline-block;
+	height: 13em;
+	width: 10%em;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.staffIMG{
+	height: 8em;
+	width: 8em;
+	border-radius: 30em;
+}
+
+.staffIMGdescr{
+	font-family: Calibri;
 	text-align: center;
 	font-size: 3em;
 	color: #262626;
@@ -130,24 +140,11 @@ a{
 	margin:auto;
 }
 
-#staff-description-1{
-	margin-right: 0.5em;
-}
-
-#staff-description-2{
-	margin-right: 0.4em;
-}
-
-#staff.description-3{
-	margin-left: 0.4em;
-}
-
-#staff-description-4{
-	margin-left: 0.5em;
-}
-
-.staff-description:hover{
-	background-color: rgba(255, 255, 255, 0.3);
+.staffDescr{
+	display: inline-block;
+	height: 15em;
+	width: 85%;
+	vertical-align: middle;
 }
 
 #impressum{
@@ -161,7 +158,7 @@ a{
 	text-align: center;
 	font-size: 1em;
 	z-index: 2;
-	}
+}
 
 #impr-heading{
 	font-size: 1.2em;

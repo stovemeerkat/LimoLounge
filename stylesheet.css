@@ -63,9 +63,10 @@ a{
 	display: inline-block;
 	position: relative;
 	margin: auto;
-	height: 2em;
-	width: 7em;
-	top: 1em;
+	height: 2.25em;
+	width: 7.5em;
+	top: 0.8125em;
+	line-height: 2.25em;
 	color: rgba(255, 255, 255, 0.9);
 	border-radius: 15px;
 	z-index: 3;
@@ -88,7 +89,7 @@ a{
 	z-index: 3;
 }
 
-#staff-container{
+/*#staff-container{
 	text-align: center;
 	z-index: 2;
 }
@@ -149,11 +150,12 @@ a{
 .staff-description:hover{
 	background-color: rgba(255, 255, 255, 0.3);
 }
+*/
 
 #introduction{
 	display: block;
 	position: relative;
-	top: 0.5em;
+	top: 10em;
 	margin: auto;
 	height: 6.5em;
 	width: 18em;
@@ -175,6 +177,7 @@ a{
 	text-align: center;
 	font-size: 2.5em;
 	z-index: 2;
+	margin-bottom: 6;
 }
 
 #impressum{
