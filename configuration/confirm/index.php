@@ -19,7 +19,7 @@
 		echo $optn . ': ';
 		
 		if(!empty($_POST[$optn])){
-			echo $Vorname <br>;
+			echo $Vorname '<br>';
 			$_SESSION['Vorname'] = $Vorname;
 		} else {
 			echo $Vorname '<br>';
