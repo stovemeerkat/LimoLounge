@@ -7,8 +7,8 @@
 	
 	<body>
 		<h1>Diese Seite ist noch im Entwicklungsstadium.</h1>
-		<p>Sie kÃ¶nnen daher noch keine Bestellungen aufgeben.</p>
-		<p>Kommen sie spÃ¤ter noch einmal. Bestellungen dÃ¼rften vorraussichtlich ab dem 10. Dezember mÃ¶glich sein</p>
+		<p>Sie können daher noch keine Bestellungen aufgeben.</p>
+		<p>Kommen sie später noch einmal. Bestellungen dürften vorraussichtlich ab dem 10. Dezember möglich sein</p>
 		
 		<?php
 			$password = '';
