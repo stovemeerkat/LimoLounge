@@ -9,7 +9,8 @@
 		<h1>Diese Seite ist noch im Entwicklungsstadium.</h1>
 		<p>Sie können daher noch keine Bestellungen aufgeben.</p>
 		<p>Kommen sie später noch einmal. Bestellungen dürften vorraussichtlich ab dem 10. Dezember möglich sein</p>
-		<div>
+		<br>
+		<div style="border: 1px solid black">
 			<p>Sollten sie an der Entwicklung dieser Seite beteiligt sein, geben sie hier das Passwort ein:</p>
 			<?php
 				$password = '';
