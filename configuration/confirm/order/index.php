@@ -14,7 +14,8 @@
 		die('Connection failed:\n' . $conn->connect_error);
 	}
 	
-	$create = $conn->prepare('INSERT INTO Bestellungen () VALUES ();');
+	$create = $conn->prepare('INSERT INTO Bestellungen (Name, Strasse, Ort) VALUES (?, ?, ?);');
+	$create->bind_param('sss', $_POST['Name'], $_POST['Strasse'], $_POST['Ort']);
 	$create->execute();
 	$ID = $conn->insert_id;
 	$create->close();
@@ -44,6 +45,8 @@
 		echo 'nein <br>';
 		}
 	}
+	function checkPostOption($optn){
+		echo $optn . ': ' . $_POST[$optn];
  ?>
  
 <html>
@@ -83,6 +86,13 @@
 				checkOption('Kohlensaeure');
 				checkOption('Koffein');
 			?>
+			<h2>Adresse</h2>
+			<?php
+				checkPostOption('Name');
+				checkPostOption('Strasse');
+				checkPostOption('Ort');
+			?>
+		</div>
 	</body>
-
 </html>
+<!--- Test --->
