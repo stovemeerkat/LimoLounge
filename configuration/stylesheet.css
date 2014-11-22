@@ -82,7 +82,7 @@ html{
 	display: block;
 	position: absolute;
 	top: 12.5%;
-	height: 75%;
+	height: 40em;
 	width: 90%;
 	left: 5%;
 	margin: auto;
@@ -171,7 +171,7 @@ img{
 #points-wrapper{
 	display: block;
 	position: absolute;
-	top: 87.5%;
+	top: 47em; /*directory 4em + config-step 40em + margin 3em*/
 	left: 50%;
 	transform: translate(-50%, 0);
 	height:4.5em;
