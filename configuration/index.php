@@ -14,17 +14,19 @@
 			<p>Sollten sie an der Entwicklung dieser Seite beteiligt sein, geben sie hier das Passwort ein:</p>
 			<?php
 				$password = '';
-				if(!$_POST['input'] == $password){
-					?>
-					<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
-						<input type="password" name="input">
-					</form>
-					<?php
+				if(!empty($_POST['input'])){
+					if(($_POST['input'] == $password)){
+						echo 'Das Passwort war richtig!';
+						echo '<a href="dev_index.html">Weiter zur Konfigurationsseite</a>';
+					} else {
+						echo '<form action="'; echo htmlspecialchars($_SERVER['PHP_SELF']); echo '" method="post">';
+							echo '<input type="password" name="input">';
+						echo '</form>';
+					}
 				} else {
-					?>
-					Das Passwort war richtig!
-					<a href="dev_index.html">Weiter zur Konfigurationsseite</a>
-					<?php
+					echo '<form action="'; echo htmlspecialchars($_SERVER['PHP_SELF']); echo '" method="post">';
+						echo '<input type="password" name="input">';
+					echo '</form>';
 				}
 			?>
 		</div>
