@@ -45,8 +45,10 @@
 		echo 'nein <br>';
 		}
 	}
+	
 	function checkPostOption($optn){
-		echo $optn . ': ' . $_POST[$optn];
+		echo $optn . ': ' . $_POST[$optn]. '<br>';
+	}
  ?>
  
 <html>

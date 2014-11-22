@@ -55,12 +55,12 @@
 				checkOption('Koffein');
 			?>
 			<h2>Zahlungsdaten</h2>
-				<form action="confirm/index.php" method="post">
+				<form action="order/index.php" method="post">
 					Vorname, Nachname: <input type="text" name="Name"><br>
 					Straﬂe, Hausnr.: <input type="text" name="Strasse"><br>
 					PLZ, Ort: <input type="text" name="Ort"><br>
+					<input type="submit" value="Bestellung abschicken">
 				</form>
-			<a href="order/index.php?<?php echo htmlspecialchars(SID); ?>"><div class="button" id="btn-Finished">Bestellen</div></a>
 		</div>
 	</body>
 
