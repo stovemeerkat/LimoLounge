@@ -30,8 +30,8 @@
 			<div class="dir-item"><a href="http://limolounge.16mb.com/configuration/" class="dir-link">Configurate</a></div>
 			<div class="dir-item"><a href="http://limolounge.16mb.com/configuration/staff/" class="dir-link">Staff</a></div>
 		</div>
-		<div class="config-step" style="z-index: 3">
-			<h1>Bestellung übeprüfen:</h1>
+		<div class="wrapper">
+			<div id="header"><p>Bestellung übeprüfen:</p></div>
 			<h2>Geschmack</h2>
 			<?php
 				checkOption('Apfel');
@@ -55,12 +55,18 @@
 				checkOption('Koffein');
 			?>
 			<h2>Zahlungsdaten</h2>
-				<form action="order/index.php" method="post">
-					Vorname, Nachname: <input type="text" name="Name"><br>
-					Straße, Hausnr.: <input type="text" name="Strasse"><br>
-					PLZ, Ort: <input type="text" name="Ort"><br>
-					<input type="submit" value="Bestellung abschicken">
-				</form>
+			<form action="order/index.php" method="post">
+				<table>
+					<tr><td>Vorname, Nachname:</td><td><input type="text" name="Name"></td></tr>
+					<tr><td>Straße, Hausnr.:</td><td><input type="text" name="Strasse"></td></tr>
+					<tr><td>PLZ, Ort:</td><td></ts></tsY><input type="text" name="Ort"></td></tr>
+					<tr><td><button type="submit" class="button"><div style="display: table-cell; vertical-align: middle">Abschicken</div></button></td></tr>
+				</table>
+			</form>
+		</div>
+		<div id="impressum">
+			<p class="impr-paragraph" id="impr-heading">Impressum</p>
+			<p class="impr-paragraph">Made by the Big Dick Gang!</p>
 		</div>
 	</body>
 
