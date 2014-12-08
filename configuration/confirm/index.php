@@ -57,9 +57,9 @@
 			<h2>Zahlungsdaten</h2>
 			<form action="order/index.php" method="post">
 				<table>
-					<tr><td>Vorname, Nachname:</td><td><input type="text" name="Name"></td></tr>
-					<tr><td>Straﬂe, Hausnr.:</td><td><input type="text" name="Strasse"></td></tr>
-					<tr><td>PLZ, Ort:</td><td></ts></tsY><input type="text" name="Ort"></td></tr>
+					<tr><td></ts></tsY><input type="text" name="Name" class="inputLabel" placeholder="Vorname, Nachname" required /></td></tr>
+					<tr><td></ts></tsY><input type="text" name="Strasse" class="inputLabel" placeholder="Straﬂe, Hausnr." required /></td></tr>
+					<tr><td></ts></tsY><input type="text" name="Ort" class="inputLabel" placeholder="PLZ, Ort" required /></td></tr>
 					<tr><td><button type="submit" class="button"><div style="display: table-cell; vertical-align: middle">Abschicken</div></button></td></tr>
 				</table>
 			</form>
