@@ -68,7 +68,7 @@
 							<tr><td></ts></tsY><input type="text" name="Name" class="inputLabel" placeholder="Vorname, Nachname" required /></td></tr>
 							<tr><td></ts></tsY><input type="text" name="Strasse" class="inputLabel" placeholder="Straße, Hausnr." required /></td></tr>
 							<tr><td></ts></tsY><input type="text" name="Ort" class="inputLabel" placeholder="PLZ, Ort" required /></td></tr>
-							<tr><td><button type="submit" class="button"><div style="display: table-cell; vertical-align: middle;">Abschicken</div></button></td></tr>
+							<tr><td><button type="submit" class="button"><div style="display: block; margin: auto; vertical-align: middle;">Abschicken</div></button></td></tr>
 						</table>
 					</form>
 				</div>
