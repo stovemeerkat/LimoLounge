@@ -152,6 +152,23 @@ a{
 }
 */
 
+#limoContainer{
+	display: block;
+	position: relative;
+	top: 7.5em;
+	height: 10em;
+	width: 10em;
+	vertical-align: middle;
+	text-align: center;
+	margin: auto;
+	z-index: 2;
+}
+
+#limoIMG{
+	height: 10em;
+	width: 10em;
+}
+
 #introduction{
 	display: block;
 	position: relative;
@@ -181,6 +198,7 @@ a{
 	font-size: 2.5em;
 	z-index: 2;
 	margin: auto;
+	top: 3em;
 }
 
 #impressum{

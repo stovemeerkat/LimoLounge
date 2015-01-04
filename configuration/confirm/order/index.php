@@ -66,6 +66,7 @@
 			<div class="dir-item"><a href="http://limolounge.16mb.com/configuration/staff/" class="dir-link">Staff</a></div>
 		</div>
 		<div class="config-step" style="z-index: 3">
+			<h2>Vielen Dank für Ihre Bestellung!</h2>
 			<h2>Geschmack</h2>
 			<?php
 				checkOption('Apfel');
