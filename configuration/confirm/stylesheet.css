@@ -114,6 +114,7 @@ html{
 .verysmallWrapper{
 	display: block;
 	position: relative;
+	top: 2.5em;
 	width: 97.5%;
 	left: 2.5%;
 }
@@ -164,6 +165,7 @@ html{
 }
 
 #btn-Finished{
+	top: 2em;
 	right: 3em;
 	bottom: 2em;
 }
@@ -171,7 +173,7 @@ html{
 #impressum{
 	display: block;
 	position: absolute;
-	top: 55em;
+	top: 57em;
 	height: 3em;
 	width: 100%;
 	padding: 0.3em;
