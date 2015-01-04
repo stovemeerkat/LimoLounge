@@ -156,8 +156,8 @@ a{
 	display: block;
 	position: relative;
 	top: 7.5em;
-	height: 10em;
-	width: 10em;
+	height: 19.5em;
+	width: 13em;
 	vertical-align: middle;
 	text-align: center;
 	margin: auto;
@@ -165,14 +165,14 @@ a{
 }
 
 #limoIMG{
-	height: 10em;
-	width: 10em;
+	height: 19.5em;
+	width: 13em;
 }
 
 #introduction{
 	display: block;
 	position: relative;
-	top: 5em;
+	top: 4em;
 	height: 6.5em;
 	width: 18em;
 	text-align: center;
@@ -198,13 +198,13 @@ a{
 	font-size: 2.5em;
 	z-index: 2;
 	margin: auto;
-	top: 3em;
+	top: 2em;
 }
 
 #impressum{
 	display: block;
-	position: absolute;
-	bottom: 0;
+	position: relative;
+	top: 17.5em;
 	height: 3em;
 	width: 100%;
 	padding: 0.3em;
