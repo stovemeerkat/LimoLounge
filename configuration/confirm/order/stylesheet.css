@@ -89,6 +89,7 @@ html{
 	background-color: rgba(0, 0, 0, 0.5);
 	color: #FFFFFF;
 	z-index: 2;
+	text-align: center;
 }
 
 .step-header{
@@ -128,7 +129,40 @@ html{
 	border-radius: 5px;
 }
 
+#danke{
+	vertical-align: center;
+	top: 2.5em;
+	position: relative;
+	text-align: center;
+	font-size: 4.5em;
+	z-index: 2;
+	margin: auto;
+	display: block;
+}
+
 #btn-Finished{
 	right: 3em;
 	bottom: 2em;
+}
+#impressum{
+	display: block;
+	position: absolute;
+	top: 60em;
+	height: 3em;
+	width: 100%;
+	padding: 0.3em;
+	background-color: rgba(255, 255, 255, 1);
+	text-align: center;
+	font-size: 1em;
+	z-index: 2;
+	}
+
+#impr-heading{
+	font-size: 1.2em;
+	padding: 0.15em;
+}
+
+.impr-paragraph{
+	color: #9C9C9C;
+	margin: auto;
 }

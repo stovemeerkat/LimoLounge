@@ -84,7 +84,7 @@ html{
 	display: block;
 	position: absolute;
 	top: 12.5%;
-	height: 45em;
+	height: 55em;
 	width: 90%;
 	left: 5%;
 	margin: auto;
@@ -107,8 +107,9 @@ html{
 	display: block;
 	position: relative;
 	height: 100%;
-	width: 95%;
+	width: 90%;
 	left: 5%;
+	right: 5%;
 }
 
 .verysmallWrapper{
@@ -121,7 +122,7 @@ html{
 
 .option-label{
 	display: block;
-	position: relative;
+	position: absolute;
 	margin: 0em 1em 0em 7em;
 	font-size: 2em;
 }
@@ -149,7 +150,7 @@ html{
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-	position: relative;
+	position: absolute;
 	height: 2.5em;
 	width: 7.5em;
 	line-height:2.5em;
@@ -162,18 +163,18 @@ html{
 	border-radius: 5px;
 	border: none;
 	right: 15%;
+	bottom: 0.75em;
 }
 
 #btn-Finished{
-	top: 2em;
 	right: 3em;
-	bottom: 2em;
+	top: 5em;
 }
 
 #impressum{
 	display: block;
 	position: absolute;
-	top: 57em;
+	top: 70em;
 	height: 3em;
 	width: 100%;
 	padding: 0.3em;
