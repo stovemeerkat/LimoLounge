@@ -84,7 +84,7 @@ html{
 	display: block;
 	position: absolute;
 	top: 12.5%;
-	height: 55em;
+	height: 50em;
 	width: 90%;
 	left: 5%;
 	margin: auto;
@@ -115,9 +115,9 @@ html{
 .verysmallWrapper{
 	display: block;
 	position: relative;
-	top: 2.5em;
 	width: 97.5%;
-	left: 2.5%;
+	left: 2%;
+	margin: 1.125em;
 }
 
 .option-label{
@@ -167,14 +167,14 @@ html{
 }
 
 #btn-Finished{
-	right: 3em;
-	top: 5em;
+	right: 1.5em;
+	top: 3em;
 }
 
 #impressum{
 	display: block;
 	position: absolute;
-	top: 70em;
+	top: 60em;
 	height: 3em;
 	width: 100%;
 	padding: 0.3em;
