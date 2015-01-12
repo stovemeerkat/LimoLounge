@@ -89,6 +89,45 @@ a{
 	z-index: 3;
 }
 
+#preisstempel{
+	display: inline-block;
+	position: absolute;
+	height: 10em;
+	width: 10em;
+	border-radius: 30em;
+	top: 7.5em;
+	right: 5em;
+	z-index: 3;
+}
+
+#preisstempel-img{
+	height: 10em;
+	width: 10em;
+	border-radius: 30em;
+}
+
+.rotate{
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+     
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+     
+    overflow:hidden;
+ 
+    }   
+ 
+.rotate:hover   
+{ 
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg); 
+    -o-transform:rotate(360deg);
+} 
+
 /*#staff-container{
 	text-align: center;
 	z-index: 2;
