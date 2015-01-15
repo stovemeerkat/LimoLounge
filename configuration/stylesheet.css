@@ -202,8 +202,8 @@ img{
 
 #impressum{
 	display: block;
-	position: absolute;
-	top: 60em;
+	position: relative;
+	bottom: 0;
 	height: 3em;
 	width: 100%;
 	padding: 0.3em;
