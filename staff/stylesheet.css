@@ -34,11 +34,11 @@ a{
 #directory{
 	display: block;
 	background-color: rgba(0, 0, 0, 0.6);
+	width: 100%;
 	height: 4em;
 	position: fixed;
 	top: 0;
 	left: 0;
-	right: 0;
 	text-align: center;
 	z-index: 3;
 }
@@ -89,73 +89,51 @@ a{
 	z-index: 3;
 }
 
-#preisstempel{
-	display: inline-block;
-	position: absolute;
-	height: 10em;
-	width: 10em;
-	border-radius: 30em;
-	top: 7.5em;
-	right: 5em;
-	z-index: 3;
-}
-
-#preisstempel-img{
-	height: 10em;
-	width: 10em;
-	border-radius: 30em;
-}
-
-.rotate{
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s;
-     
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-     
-    overflow:hidden;
- 
-    }   
- 
-.rotate:hover   
-{ 
-    -webkit-transform:rotate(360deg);
-    -moz-transform:rotate(360deg); 
-    -o-transform:rotate(360deg);
-} 
-
-/*#staff-container{
-	text-align: center;
-	z-index: 2;
-}
-
-.staff{
-	display: inline-block;
+#staff-container{
+	display: block;
 	position: relative;
-	margin-top: 8em;
-	height: 8em;
-	width: 8em;
-	border: 2px solid black;
-	border-radius: 30em;
+	top: 7em;
+	height: 105%;
+	width: 90%;
+	margin: auto;
+	color: #FFFFFF;
+	z-index: 2;
+}
+
+/*.staff{
+	display: block;
+	position: relative;
+	height: 13em;
+	width: 100%;
+	z-index: 2;
+}*/
+
+.staffMember{
+	display: block;
+	position: relative;
+	height: 15em;
+	width: 100%;
 	z-index: 2;
 	}
 
-.staff-img{
+.staffIMGcont{
+	position: relative;
+	top: 1em;
+	display: inline-block;
+	height: 13em;
+	width: 10%em;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.staffIMG{
 	height: 8em;
 	width: 8em;
 	border-radius: 30em;
-	}
-
-#staff-description-container{
-	height:3em;
-	text-align: center;
 }
 
-.staff-description{
+.staffIMGdescr{
+	font-family: Calibri;
 	text-align: center;
 	font-size: 3em;
 	color: #262626;
@@ -170,80 +148,28 @@ a{
 	margin:auto;
 }
 
-#staff-description-1{
-	margin-right: 0.5em;
-}
-
-#staff-description-2{
-	margin-right: 0.4em;
-}
-
-#staff.description-3{
-	margin-left: 0.4em;
-}
-
-#staff-description-4{
-	margin-left: 0.5em;
-}
-
-.staff-description:hover{
-	background-color: rgba(255, 255, 255, 0.3);
-}
-*/
-
-#limoContainer{
-	display: block;
-	position: relative;
-	top: 7.5em;
-	height: 19.5em;
-	width: 34.67em;
+.staffDescr{
+	display: inline-block;
+	height: 13em;
+	width: 85%;
 	vertical-align: middle;
-	text-align: center;
-	margin: auto;
-	z-index: 2;
+	position: relative;
+	left: 4%;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
 }
 
-#limoVID{
-	height: 19.5em;
-	width: 34.67em;
-}
-
-#introduction{
-	display: block;
-	position: relative;
-	top: 4em;
-	height: 6.5em;
-	width: 18em;
-	text-align: center;
-	font-size: 2.5em;
-	z-index: 2;
-	margin: auto;
-}
-
-#btn-wrapper{
-	position: relative;
-	top: 5em;
-	padding: 1.5em;
-}	
-
-#btn-order{
-	display: block;
-	position: relative;
-	height: 1.4em;
-	width: 10em;
-	padding: 0.3em;
-	background-color: #ff8c00;
-	text-align: center;
-	font-size: 2.5em;
-	z-index: 2;
-	margin: auto;
-	top: 2em;
+.staffDescrTxt{
+	color: #FFFFFF;
+	font-size: 1.8em;
+	font-family: Calibri, sans-serif;
+	margin: 0.5em 0 0 0.5em;
 }
 
 #impressum{
 	display: block;
 	position: relative;
-	top: 17.5em;
+	top: 10em;
 	height: 3em;
 	width: 100%;
 	padding: 0.3em;
@@ -251,7 +177,7 @@ a{
 	text-align: center;
 	font-size: 1em;
 	z-index: 2;
-	}
+}
 
 #impr-heading{
 	font-size: 1.2em;

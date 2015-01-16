@@ -1,0 +1,168 @@
+html{
+	background: url('https://scontent-a-vie.xx.fbcdn.net/hphotos-xpa1/t31.0-8/10631201_828426333841759_7997915809994208160_o.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+
+#shade{
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 1;
+}
+
+*{
+	font-family: Arial, sans-serif;
+}
+
+
+#directory{
+	display: block;
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 4em;
+	position: fixed;
+	top: 0;
+	left: 0;
+	text-align: center;
+	z-index: 3;
+}
+
+#logo{
+	display: inline-block;
+	position: absolute;
+	height: 6em;
+	width: 6em;
+	border-radius: 30em;
+	top: -1em;
+	left: 0.5em;
+	z-index: 3;
+}
+ 
+#logo-img{
+	height: 6em;
+	width: 6em;
+	border-radius: 30em;
+}
+
+.dir-item{
+	display: inline-block;
+	position: relative;
+	margin: auto;
+	height: 2.25em;
+	width: 7.5em;
+	top: 0.8125em;
+	line-height: 2.25em;
+	color: rgba(255, 255, 255, 0.9);
+	border-radius: 15px;
+	z-index: 3;
+}
+ 
+.dir-item:hover{
+	background-color: rgba(255, 255, 255, 0.2);
+	z-index: 3;
+}
+ 
+.dir-link{
+	display: block;
+	position: relative;
+	margin: auto;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.9);
+	text-decoration: none;
+	font-size: 1.5em;
+	font-family: Calibri, sans-serif;
+	z-index: 3;
+}
+
+.config-step{
+	display: block;
+	position: absolute;
+	top: 12.5%;
+	height: 75%;
+	width: 90%;
+	left: 5%;
+	margin: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #FFFFFF;
+	z-index: 2;
+	text-align: center;
+}
+
+.step-header{
+	display: block;
+	position: relative;
+	top: 0.5em;
+	margin-bottom: 2em;
+	text-align: center;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+.option-label{
+	display: block;
+	position: relative;
+	margin: 0em 1em 0em 7em;
+	font-size: 2em;
+}
+
+.option-wrapper{
+	margin-bottom: 5.5em;
+	display: inline-block;
+}
+
+.button{
+	display: block;
+	position: absolute;
+	height: 2.5em;
+	width: 7.5em;
+	line-height:2.5em;
+	padding: 0.2em;
+	background-color: #ff8c00;
+	text-align: center;
+	font-size: 1.5em;
+	z-index: 2;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#danke{
+	vertical-align: center;
+	top: 2.5em;
+	position: relative;
+	text-align: center;
+	font-size: 4.5em;
+	z-index: 2;
+	margin: auto;
+	display: block;
+}
+
+#btn-Finished{
+	right: 3em;
+	bottom: 2em;
+}
+#impressum{
+	display: block;
+	position: absolute;
+	top: 60em;
+	height: 3em;
+	width: 100%;
+	padding: 0.3em;
+	background-color: rgba(255, 255, 255, 1);
+	text-align: center;
+	font-size: 1em;
+	z-index: 2;
+	}
+
+#impr-heading{
+	font-size: 1.2em;
+	padding: 0.15em;
+}
+
+.impr-paragraph{
+	color: #9C9C9C;
+	margin: auto;
+}
